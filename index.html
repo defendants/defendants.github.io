@@ -1,0 +1,109 @@
+<!--
+                  /\ \                               
+  ____     __     \_\ \ 
+ /',__\  /'__`\   /'_` \
+/\__, `\/\ \L\.\_/\ \L\ \
+\/\____/\ \__/.\_\ \___,_\ 
+ \/___/  \/__/\/_/\/__,_ /\                                             
+-->
+<head>
+<title>the gang</title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="icon" type="image/ico" href="images/favicon.jpg">
+<script language="JavaScript">
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+</head>
+<body style="background-image:url(https://cdn.discordapp.com/attachments/506153892942184458/506493952598212629/image0.gif)">
+    <table>
+	<div class="container">
+    <li class="dropdown">
+      <input type="checkbox"/>
+      <a href="#" data-toggle="dropdown"><img src="images/icon.png" style="width:32px;height:32px;" /></a>
+      <ul class="dropdown-menu" style="font-size:22px;">
+        <li><a href="info/" target="_blank">Info</a></li>
+        <li><a href="files/" target="_blank">Files</a></li>
+        <li><a href="misc/" target="_blank">misc</a></li>
+      </ul>
+    </li>
+</div>
+</table>
+</div>
+<style> 
+@font-face {
+    font-family: Fixedsys Excelsior;
+    font-style: normal;
+    src: url("font/fsex300-webfont.ttf");
+         url("font/fsex300-webfont.eot");
+         url("font/fsex300-webfont.woff");
+}
+
+
+div {
+    font-family: Fixedsys Excelsior;
+}
+</style>
+<div id="screen">
+<div id="title" class= "rainbow">
+alek 
+</div>
+
+<hr>
+<a href="https://www.snapchat.com/add/abbreviate "target=_blank">snapchat</a><br>
+<a href="https://twitter.com/lhe "target=_blank">twitter</a><br>
+<a href="https://steamcommunity.com/id/-o_"target=_blank">steam</a><br>
+<hr>
+<font color="white">s/o:</font><br>
+<div id="shoutout" class="scrollbar">
+<font color="white">jaden</font><br>
+<font color="white">cody</font><br>
+<font color="white">hoax</font><br>
+</div>
+</div>
+
+<video autoplay="" loop="" id="player">
+<source src="fire.mp3" type="audio/mpeg">
+var video = document.currentScript.parentElement;
+video.volume = 0.90;
+</script>
+</video>
+
+</body></html>
+<!-- yah yeet -->
