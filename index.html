@@ -70,20 +70,20 @@ function loop() {
         disabledEvent(e);
       }
       // "F12" key
-      if (event.keyCode == 123) {
-        disabledEvent(e);
-      }
-    }, false);
-    function disabledEvent(e){
-      if (e.stopPropagation){
-        e.stopPropagation();
-      } else if (window.event){
-        window.event.cancelBubble = true;
-      }
-      e.preventDefault();
-      return false;
-    }
-  };
+    //  if (event.keyCode == 123) {
+       // disabledEvent(e);
+    //  }
+   // }, false);
+  //  function disabledEvent(e){
+  //    if (e.stopPropagation){
+ //       e.stopPropagation();
+  //    } else if (window.event){
+   //     window.event.cancelBubble = true;
+   //   }
+   //   e.preventDefault();
+   //   return false;
+  //  }
+ // };
 </script>
 </head>
 <body style="background-image:url(https://cdn.discordapp.com/attachments/506153892942184458/506493952598212629/image0.gif)">
