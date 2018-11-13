@@ -139,9 +139,13 @@ defend
 </div>
 </div>
 
-<audio>
-<iframe  allow="autoplay" allow="loop" src="plug.mp3" id="audio"></iframe> 
-</audio>
+	<audio id="mp3" loop autoplay src="plug.mp3"></audio>
+
+	<script type="text/javascript">
+		var mp3 = document.getElementById("mp3");
+		mp3.volume = 0.15; 
+	</script>
+
 </body>
 </html>
 
